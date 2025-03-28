@@ -4,7 +4,7 @@ function App() {
   const [message, setMessage] = useState("Loading...");
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/ping") // Ensure this matches your FastAPI endpoint
+    fetch("https://your-backend.onrender.com/ping") // Ensure this matches your FastAPI endpoint
       .then((res) => res.json())
       .then((data) => setMessage(data.message))
       .catch((error) => {
